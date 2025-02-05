@@ -1,0 +1,5 @@
+def tenth_line(file_name: str) -> str:
+    with open(file_name, 'r') as file:
+        for _ in range(9):
+            file.readline()
+        return file.readline().strip()
